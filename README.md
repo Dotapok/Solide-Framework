@@ -4,7 +4,6 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-blue.svg)](https://golang.org/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
-[![Build Status](https://github.com/solide-framework/solide/actions/workflows/ci.yml/badge.svg)](https://github.com/solide-framework/solide/actions)
 [![Discord](https://img.shields.io/discord/your-discord-id.svg?logo=discord)](https://discord.gg/solide)
 [![Twitter](https://img.shields.io/twitter/follow/solide_framework.svg?style=social)](https://twitter.com/solide_framework)
 
