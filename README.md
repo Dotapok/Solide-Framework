@@ -1,6 +1,6 @@
 # Solide Framework 🚀
 
-> Le Framework Backend Cloud-Native pour Go - Productivité de Laravel, Performance de Go
+> Le Framework Backend Cloud-Native pour Go - Productivité framework moderne, Performance de Go
 
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-blue.svg)](https://golang.org/)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
@@ -30,3 +30,17 @@ go install solide/framework@latest
 git clone https://github.com/solide-framework/solide.git
 cd solide
 make install
+
+Votre Premier Projet en 60 Secondes
+bash
+# 1. Créer un nouveau projet
+solide new mon-api
+
+# 2. Naviguer dans le projet
+cd mon-api
+
+# 3. Démarrer le serveur
+solide dev
+
+# 4. Visiter http://localhost:8080
+#    → Health check, métriques, documentation
