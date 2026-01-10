@@ -24,7 +24,7 @@
 
 ```bash
 # Via go install
-go install solide/framework@latest
+go install solide.dev/framework@latest
 
 # Ou builder depuis source
 git clone https://github.com/solide-framework/solide.git
