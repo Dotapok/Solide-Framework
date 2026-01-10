@@ -1,0 +1,41 @@
+# .gitignore pour Go
+bin/
+dist/
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# binaire de test
+*.test
+
+# Sortie de la tool de couverture
+*.out
+
+# Dossiers de dependances
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Variable d'environnement
+.env
+.env.local
+
+# Artefacts construits
+build/
+release/
+
+# Fichier generés par l'OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
