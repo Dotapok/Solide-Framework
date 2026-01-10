@@ -31,8 +31,8 @@ git clone https://github.com/solide-framework/solide.git
 cd solide
 make install
 
-Votre Premier Projet en 60 Secondes
-bash
+#### **Votre Premier Projet en 60 Secondes** 
+```bash
 # 1. Créer un nouveau projet
 solide new mon-api
 
