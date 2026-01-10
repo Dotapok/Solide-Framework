@@ -30,17 +30,3 @@ go install solide/framework@latest
 git clone https://github.com/solide-framework/solide.git
 cd solide
 make install
-
-#### **Votre Premier Projet en 60 Secondes** 
-```bash
-# 1. Créer un nouveau projet
-solide new mon-api
-
-# 2. Naviguer dans le projet
-cd mon-api
-
-# 3. Démarrer le serveur
-solide dev
-
-# 4. Visiter http://localhost:8080
-#    → Health check, métriques, documentation
