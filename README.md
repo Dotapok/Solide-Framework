@@ -1,4 +1,4 @@
-# Solide Framework 🚀
+# Solide Framework
 
 > Le Framework Backend Cloud-Native pour Go - Productivité framework moderne, Performance de Go
 

@@ -1,0 +1,46 @@
+# Configuration par défaut pour les projets Solide
+project:
+  name: "solide-project"
+  version: "1.0.0"
+  description: "Projet Solide pour vous"
+
+runtime:
+  go_version: "1.21+"
+  mode: "server" # server, lambda, container
+
+server:
+  port: 8080
+  host: "0.0.0.0"
+  timeout:
+    read: 10s
+    write: 10s
+    idle: 60s
+
+logging:
+  level: "info" # debug, info, warn, error
+  format: "json" # json, text
+  output: "stdout" # stdout, file
+
+plugins:
+  enabled:
+    - http
+    - config
+    - logger
+  
+  database:
+    driver: "sqlite" # postgres, mysql, sqlite
+    dsn: "host=localhost user=sqlite dbname=solide sslmode=disable"
+    max_connections: 25
+
+templates:
+  minify: true
+  cache: true
+
+security:
+  cors:
+    enabled: true
+    origins: ["*"]
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+  rate_limit:
+    enabled: true
+    requests_per_minute: 100
