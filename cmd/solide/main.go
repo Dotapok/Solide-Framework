@@ -16,9 +16,10 @@ var (
 
 // lancement du noyau
 func main() {
-	cmd := cli.NewCommand(version, buildtime)
+	cmd := cli.PresentationCmd(version, buildtime)
+	cmd.AddCommands()
 	
-	if err := cmd.Execute(); err != nil {
+	if err := cmd.Execution(); err != nil {
 		fmt.Println(os.Stderr, err, "Erreur lors de l'exécution de la commande", err)
 		os.Exit(1)
 	}
