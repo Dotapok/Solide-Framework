@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         go: ['1.21', '1.25']
+      fail-fast: false
 
     steps:
     - name: Checkout
@@ -21,6 +22,7 @@ jobs:
       uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
+        cache: false
 
     - name: Cache Go modules
       uses: actions/cache@v3
@@ -44,6 +46,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
+    if: always()
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-go@v4

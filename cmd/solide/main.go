@@ -20,7 +20,7 @@ func main() {
 	cmd.AddCommands()
 	
 	if err := cmd.Execution(); err != nil {
-		fmt.Println(os.Stderr, err, "Erreur lors de l'exécution de la commande", err)
+		fmt.Fprintln(os.Stderr, "Erreur lors de l'exécution de la commande", err)
 		os.Exit(1)
 	}
 }

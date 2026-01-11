@@ -60,7 +60,7 @@ func (c *Command) NouveauProjetCmd() *cobra.Command {
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			projectName := args[0]
-			fmt.Println("Création d'un nouveau projet %s...\n", projectName)
+			fmt.Printf("Création d'un nouveau projet %s...\n", projectName)
 			// a implementer
 			fmt.Printf("Projet créé: %s\n", projectName)
 			fmt.Printf("\nPour démarrer:\n")
