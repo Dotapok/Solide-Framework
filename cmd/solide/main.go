@@ -6,7 +6,7 @@ import (
 	"os"
 	"fmt"
 
-	"github.com/dotapok/solide/internal/cli"
+	"solide/framework/internal/cli"
 )
 
 var (

@@ -1,8 +1,8 @@
 # Configuration par défaut pour les projets Solide
 project:
-  name: "solide-project"
+  name: "Projet Solide"
   version: "1.0.0"
-  description: "Projet Solide pour vous"
+  description: "Performance et Productivité."
 
 runtime:
   go_version: "1.21+"
